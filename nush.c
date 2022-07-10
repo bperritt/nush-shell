@@ -113,7 +113,7 @@ int redirectOut(ast* left, ast* right) {
     return exit_code;
 }
 
-// close both stdin and stdin and rerout them to fd[0] and fd[0], and then run the code
+// close both stdin and stdout and rerout them to fd[0] and fd[1], and then run the code
 // on each side.
 int pipeCmd(ast* left, ast* right) {
     int cpid;
