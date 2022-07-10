@@ -33,10 +33,10 @@ int is_valid_op(char* s) {
 	if ( strcmp(s, ">") == 0) {
 		return 1;
 	}
-    if ( strcmp(s, "(") == 0) {
+        if ( strcmp(s, "(") == 0) {
 		return -5;
 	}
-    if ( strcmp(s, ")") == 0) {
+	if ( strcmp(s, ")") == 0) {
 		return 5;
 	}
 	return 0;
